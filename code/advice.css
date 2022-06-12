@@ -30,14 +30,9 @@ body {
 
 .upper-text {
     text-align: center;
-    font-size: larger;
+    font-size: large;
     color: var(--green);
     margin-top: 40px;
-}
-
-.dice:hover {
-    background-color: var(--glowing-green);
-    box-shadow: var(--glowing-green) 0px 0px 40px 0.5px;
 }
 
 /* desktop and tablet */
@@ -81,6 +76,11 @@ body {
         padding: 15px 15px 11px 15px;
         top: 91%;
     }
+
+    .dice:hover {
+        background-color: var(--glowing-green);
+        box-shadow: var(--glowing-green) 0px 0px 40px 0.5px;
+    }
 }
 
 /* mobile */
@@ -123,5 +123,10 @@ body {
         border-radius: 30px;
         padding: 18px 18px 14px 18px;
         top: 92%;
+    }
+
+    .dice:active {
+        background-color: var(--glowing-green);
+        box-shadow: var(--glowing-green) 0px 0px 40px 0.5px;
     }
 }
