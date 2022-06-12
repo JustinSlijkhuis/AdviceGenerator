@@ -27,6 +27,20 @@ body {
 
 
 /* container classes */
+
+.upper-text {
+    text-align: center;
+    font-size: larger;
+    color: var(--green);
+    margin-top: 40px;
+}
+
+.dice:hover {
+    background-color: var(--glowing-green);
+    box-shadow: var(--glowing-green) 0px 0px 40px 0.5px;
+}
+
+/* desktop and tablet */
 @media screen and (min-width: 769px){
     .container {
         position: absolute;
@@ -46,12 +60,15 @@ body {
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 45px;
+        bottom: 40px;
     }
 
     .advice-text {
-        margin: 0px 50px;
-        margin-top: 30px;
+        position: fixed;
+        width: 80%;
+        margin: 0px;
+        top: 50%;
+        transform: translateY(-50%);
         font-size: x-large;
         text-align: center;
         color: white;
@@ -66,13 +83,14 @@ body {
     }
 }
 
+/* mobile */
 @media screen and (max-width: 768px) {
     .container {
         position: absolute;
         transform: translateY(-50%);
         top: 45%;
         width: 90%;
-        height: 330px;
+        height: 350px;
         border-radius: 15px;
         background-color: var(--grey-blue);
     }
@@ -89,8 +107,11 @@ body {
     }
 
     .advice-text {
-        margin: 0px 50px;
-        margin-top: 35px;
+        position: fixed;
+        width: 70%;
+        margin: 0px;
+        top: 50%;
+        transform: translateY(-50%);
         font-size: x-large;
         text-align: center;
         color: white;
@@ -103,16 +124,4 @@ body {
         padding: 18px 18px 14px 18px;
         top: 92%;
     }
-}
-
-.upper-text {
-    text-align: center;
-    font-size: large;
-    color: var(--green);
-    margin-top: 40px;
-}
-
-.dice:hover {
-    background-color: var(--glowing-green);
-    box-shadow: var(--glowing-green) 0px 0px 40px 0.5px;
 }
